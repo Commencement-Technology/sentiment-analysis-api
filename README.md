@@ -17,16 +17,16 @@ This repository provides a basic API for sentiment analysis, utilizing the OpenA
 
 
 ## Used Technologies
-- ***Express:*** Web framework for Node.js.
-- ***Mongoose:*** MongoDB object modeling tool.
-- ***jsonwebtoken:*** JSON Web Token implementation.
-- ***bcryptjs:*** Library to hash passwords.
-- ***dotenv:*** Module to load environment variables.
-- ***express-rate-limit:*** Middleware to limit repeated requests.
-- ***node-cron:*** Task scheduler for Node.js.
-- ***nodemon:*** Utility to monitor for changes in Node.js applications.
-- ***OpenAI API:*** For sentiment analysis.
-- ***Redis:*** In-memory data structure store.
+- `express`: Web framework for Node.js.
+- `mongoose`: MongoDB object modeling tool.
+- `jsonwebtoken`: JSON Web Token implementation.
+- `bcryptjs`: Library to hash passwords.
+- `dotenv`: Module to load environment variables.
+- `express-rate-limit`: Middleware to limit repeated requests.
+- `node-cron`:Task scheduler for Node.js.
+- `nodemon`: Utility to monitor for changes in Node.js applications.
+- `openai`: For sentiment analysis.
+- `redis`: In-memory data structure store.
 
 ## Endpoints
 
