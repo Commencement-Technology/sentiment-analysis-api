@@ -1,5 +1,7 @@
 # Sentiment Analysis API
 
+![Frame 7](https://github.com/carpodok/sentiment-analysis-api/assets/64840495/e95b74f9-f6b6-40bf-871b-0418cb8bd7fb)
+
 ## Overview
 This repository provides a basic API for sentiment analysis, utilizing the OpenAI API for processing text inputs. The API categorizes sentiment as positive, negative, or neutral.
 
