@@ -58,7 +58,7 @@ Response:
 }
 ```
 
-<hr><br>
+<hr>
 
 - ### POST /login
 
@@ -87,7 +87,7 @@ Response:
 }
 ```
 
-<hr><br>
+<hr>
 
 - ### POST /analyze
 
@@ -116,7 +116,7 @@ Response:
   "data": "Negative"
 }
 ```
-<hr><br>
+<hr>
 
 - ### POST /custom-sentiment-categories
 
@@ -148,7 +148,7 @@ Response:
   ]
 }
 ```
-<hr><br>
+<hr>
 
 - ### GET /profile
 
@@ -183,7 +183,7 @@ Response:
 }
 ```
 <hr>
-<br><br>
+<br>
 
 
 ## Setup
