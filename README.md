@@ -28,9 +28,166 @@ This repository provides a basic API for sentiment analysis, utilizing the OpenA
 - ***OpenAI API:*** For sentiment analysis.
 - ***Redis:*** In-memory data structure store.
 
+## Endpoints
+
+- ### POST /register
+
+```bash
+http://localhost:3000/register
+```
+
+Headers:
+```bash
+Content-Type: application/json
+```
+
+Request:
+```bash
+{
+    "name": "ali",
+    "email":"a@gmail.com",
+    "password":"123456"
+}
+```
+
+Response:
+```bash
+{
+  "success": true,
+  "token": ""
+}
+```
+
+<hr><br>
+
+- ### POST /login
+
+```bash
+http://localhost:3000/login
+```
+
+Headers:
+```bash
+Content-Type: application/json
+```
+
+Request:
+```bash
+{
+    "email":"a@gmail.com",
+    "password":"123456"
+}
+```
+
+Response:
+```bash
+{
+  "success": true,
+  "token": ""
+}
+```
+
+<hr><br>
+
+- ### POST /analyze
+
+```bash
+http://localhost:3000/analyze
+```
+
+Headers:
+```bash
+Content-Type: application/json
+Authorization: Bearer your_access_token_here
+```
+
+Request:
+```bash
+
+{
+    "text": "The customer service was not good enough, and I am very disappointed with the experience."
+}
+```
+
+Response:
+```bash
+{
+  "success": true,
+  "data": "Negative"
+}
+```
+<hr><br>
+
+- ### POST /custom-sentiment-categories
+
+```bash
+http://localhost:3000/custom-sentiment-categories
+```
+
+Headers:
+```bash
+Content-Type: application/json
+Authorization: Bearer your_access_token_here
+```
+
+Request:
+```bash
+{
+  "categories": ["Happy", "Sad", "Angry"]
+}
+```
+
+Response:
+```bash
+{
+  "success": true,
+  "data": [
+    "Happy",
+    "Sad",
+    "Angry"
+  ]
+}
+```
+<hr><br>
+
+- ### GET /profile
+
+```bash
+http://localhost:3000/profile
+```
+
+Headers:
+```bash
+Content-Type: application/json
+Authorization: Bearer your_access_token_here
+```
+
+Response:
+```bash
+{
+  "success": true,
+  "data": {
+    "_id": "6666059d80df1c6f48e43c1f",
+    "name": "ali",
+    "email": "a@gmail.com",
+    "customSentimentCategories": [
+      "Happy",
+      "Sad",
+      "Angry"
+    ],
+    "requestCount": 1,
+    "requestLimit": 2,
+    "createdAt": "2024-06-09T19:42:21.608Z",
+    "__v": 1
+  }
+}
+```
+<hr>
+<br><br>
+
 
 ## Setup
-#### 1.Clone the Repo:
+### 1.Clone the Repo:
 
 ```bash
 git clone https://github.com/carpodok/sentiment-analysis-api.git
